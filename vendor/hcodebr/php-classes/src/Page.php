@@ -18,7 +18,7 @@ class Page{
 
         $config = [
             "tpl_dir"=>$_SERVER["DOCUMENT_ROOT"] . "/views/",
-            "cache_dir"=>$_SERVER["DOCUMENT_ROOT"]. "/views-cache",
+            "cache_dir"=>$_SERVER["DOCUMENT_ROOT"]. "/views-cache/",
             "debug"=>false
         ];
 
@@ -50,7 +50,7 @@ class Page{
     public function __destruct(){
         
         $this->tpl->draw("footer");
-        
+
     }
 }
 
